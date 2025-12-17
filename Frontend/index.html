@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI QA Code Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="title">AI QA Code Test Platform</h1>
+
+    <label>Language</label>
+    <select id="language">
+        <option value="">-- Select Language --</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="c">C</option>
+    </select>
+
+    <label>Problem ID</label>
+    <input type="text" id="problem_id" value="sum_problem">
+
+    <label>Code</label>
+    <textarea id="code" placeholder="Write your code here..."></textarea>
+
+    <button onclick="runCode()">Run Test Cases</button>
+
+    <h2 id="resultHeading" class="hidden">Test Case Results</h2>
+    <div id="results"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
