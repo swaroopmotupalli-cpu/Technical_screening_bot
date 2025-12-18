@@ -13,7 +13,7 @@ def run_docker_sandbox(language, code, input_data=""):
                 f.write(code.encode())
                 code_path = f.name
 
-            cmd = ["python", code_path]
+            cmd = ["python3", code_path]
 
         # ---------- JAVA ----------
         elif language == "java":

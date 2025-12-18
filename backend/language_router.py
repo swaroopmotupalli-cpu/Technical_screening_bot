@@ -1,6 +1,6 @@
 import json
 import os
-from .executor import run_docker_sandbox
+from executor import run_docker_sandbox
 
 def run_in_sandbox(language, code, problem_id):
 
