@@ -26,7 +26,7 @@ def run_in_sandbox(language, code, problem_id):
             "input": tc["input"],
             "expected": tc["output"],
             "actual": output,
-            "passed": output.strip() == tc["output"].strip()
+            "Status": output.strip() == tc["output"].strip()
         })
 
     return results
